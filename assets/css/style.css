@@ -1,0 +1,86 @@
+:root {
+    --foreground: #555;
+    --foreground-alt: #aaa;
+    --background: #fff;
+}
+
+* {
+    font-family: -apple-system,BlinkMacSystemFont,YakuHanJP,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-style: normal;
+
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+/* Container */
+.profile {
+    box-sizing: border-box;
+    padding: 32px;
+    margin: auto;
+}
+
+@media (width >= 640px) {
+    .profile {
+        width: 60%;
+        min-width: 640px;
+    }
+}
+
+@media (width < 640px) {
+    .profile {
+        width: 100%;
+    }
+}
+
+/* Avatar */
+.profile-avatar {
+    width: 128px;
+    height: 128px;
+    margin: 0;
+}
+
+.profile-avatar img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+}
+
+/* Name */
+.profile-name {
+    color: var(--foreground);
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.profile-name-nickname {
+    color: var(--foreground-alt);
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/* Descriptions */
+.profile-description {
+    margin: 32px 0;
+}
+
+/* Links */
+.profile-links {
+    padding-left: initial;
+}
+
+.profile-links li {
+    list-style-type: none;
+    margin: 4px 0;
+}
+
+.profile-links li a {
+    color: inherit;
+}
+
+.profile-links-img {
+    vertical-align: middle;
+}
