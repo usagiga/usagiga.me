@@ -5,7 +5,7 @@
 }
 
 * {
-    font-family: -apple-system,BlinkMacSystemFont,YakuHanJP,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, YakuHanJP, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
     font-size: 20px;
     line-height: 20px;
     font-style: normal;
@@ -19,18 +19,15 @@
     box-sizing: border-box;
     padding: 32px;
     margin: auto;
+
+    width: 60%;
+    min-width: 640px;
 }
 
-@media (width >= 640px) {
-    .profile {
-        width: 60%;
-        min-width: 640px;
-    }
-}
-
-@media (width < 640px) {
+@media (max-width: 640px) {
     .profile {
         width: 100%;
+        min-width: initial;
     }
 }
 
