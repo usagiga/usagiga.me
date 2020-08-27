@@ -15,7 +15,7 @@
 }
 
 /* Container */
-.profile {
+.profile, .graphs {
     box-sizing: border-box;
     padding: 32px;
     margin: auto;
@@ -25,7 +25,7 @@
 }
 
 @media (max-width: 640px) {
-    .profile {
+    .profile, .graphs {
         width: 100%;
         min-width: initial;
     }
@@ -80,4 +80,31 @@
 
 .profile-links-img {
     vertical-align: middle;
+}
+
+/* Graphs */
+.graphs h1 {
+    font-size: 28px;
+    line-height: 28px;
+}
+
+.graphs h2 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.graphs figure {
+    width: 100%;
+}
+
+.graphs img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
+}
+
+.graphs p {
+    font-size: 16px;
+    line-height: 16px;
+    color: var(--foreground-alt);
 }
